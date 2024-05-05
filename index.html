@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <style>
+        body {
+            background-image: url('img/background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gerenciador de Tarefas</h1>
+        <div class="task-form">
+            <input type="text" id="taskName" placeholder="Nome da Tarefa">
+            <select id="taskCategory">
+                <option value="">Selecione a categoria</option>
+                <option value="Trabalho">Trabalho</option>
+                <option value="Estudo">Estudo</option>
+                <option value="Pessoal">Pessoal</option>
+            </select>
+            <input type="datetime-local" id="taskDueDate" placeholder="Data de vencimento">
+            <button id="addTaskBtn">Adicionar Tarefa</button>
+        </div>
+        <div id="taskList"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
